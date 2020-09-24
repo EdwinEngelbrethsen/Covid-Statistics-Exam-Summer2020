@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/global_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:id="@+id/global_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="18sp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"
+        android:text="Global Statistics"
+        android:textColor="#fff"
+        tools:name="totalConfirmed"/>
+
+    <TextView
+        android:id="@+id/total_confirmed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:padding="5dp"
+        android:text="Confirmed"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/global_total" />
+
+    <TextView
+        android:id="@+id/total_deaths"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:padding="5dp"
+        android:text="Deaths"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/total_confirmed" />
+
+
+    <TextView
+        android:id="@+id/total_Recovered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:padding="5dp"
+        android:text="Recovered"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/total_deaths" />
+
+    <TextView
+        android:id="@+id/global_total_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="192dp"
+        android:padding="5dp"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/total_confirmed"
+        app:layout_constraintVertical_bias="0.333"
+        tools:name="123456" />
+
+    <TextView
+        android:id="@+id/global_total_deaths"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="192dp"
+        android:padding="5dp"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toRightOf="@+id/total_confirmed"
+        app:layout_constraintTop_toBottomOf="@+id/global_total_number"
+        tools:name="123456" />
+
+    <TextView
+        android:id="@+id/global_total_recovered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="192dp"
+        android:padding="5dp"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/global_total_deaths"
+        app:layout_constraintLeft_toRightOf="@+id/total_confirmed"
+        app:layout_constraintVertical_bias="0.333"
+        tools:name="123456" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
